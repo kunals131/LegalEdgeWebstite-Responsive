@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+    
+}
+.bg-dark {
+    background: #333;
+    color: #f4f4f4;
+
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+/* Utility class  */
+.text-primary {
+    color: #93cb52;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+
+}
+
+.bg-primary {
+    background-color: #93cb52;
+    color: white;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.m-heading {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.py-1 { padding: 1.5rem 0;}
+.py-2 { padding: 2rem 0;}
+.py-3 { padding: 3rem 0;}
+
+.p-1 { padding: 1.5rem;}
+.p-2 { padding: 2rem ;}
+.p-3 { padding: 3rem;}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 1.7rem;
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    background: #93cb52;
+    border-radius: 5px;
+    padding: 0.6rem 2rem;
+    border: none;
+}
+
+.btn:hover {
+    background: #7ab436;
+    box-shadow: 0.1rem 0.1rem #333;
+}
+
+.btn-dark {
+    background: #333;
+    color: white;
+}
+
+.list
+{
+    margin : 1rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 1rem 0;
+    border-bottom: #f4f4f4 1px dotted;
+}
+
+
+/* Navbar */
+#navbar {
+    background: #333;
+    color: white;
+    top:0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+    height: 4.5vh;
+}
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+    background : #93cb52;
+    border-radius: 5px;
+}
+
+/* ShowCase */
+#showcase {
+    background:#333 url('../img/showcase.jpg') no-repeat center center/cover;
+    height: 91vh;
+    color: white;
+}
+
+#showcase .showcase-content {
+    /* height: 100%; */
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    /* Overlays */
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right: 0    ;
+    background-color: rgba(0,0,0,0.6);  
+     /* //red green blue alpha alpha is transparency */
+
+}
+
+/* What we do : */
+.items {
+    display: flex;
+    padding: 1rem;
+    /* justify-content: space-evenly; */
+    /* justify-content: center; */
+}
+
+#what .item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item i {
+    background: #93cb52;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+
+}
+
+#who {
+    display: flex;
+}
+#who div {
+    flex: 1;
+}
+
+#who .who-img {
+    background: url('../img/people.jpg') no-repeat center center/cover;
+}
+
+/* CLients */
+#clients .items {
+    display: flex;
+}
+
+#clients .items img {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+/* Contact */
+#contact {
+    display: flex;
+}
+
+#contact .map, #contact .contact-form {
+    flex: 1;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact .form-group label {
+    display: block;
+}
+
+#contact .contact-form input, #contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+/* //Smooth Scrolling */
+

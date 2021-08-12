@@ -1,0 +1,21 @@
+/* Align icons to left */
+
+#what .items .item {
+    display: flex;
+    text-align: left;
+}
+
+/* Poisition icon */
+
+#what .items .item i {
+    margin-right: 1.3rem;
+    /* Align according to the parent element */
+    align-self: center; 
+    margin-bottom: 0 ;
+
+}
+
+#contact .map {
+    flex:2
+}
+
