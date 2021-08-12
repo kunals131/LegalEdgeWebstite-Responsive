@@ -23,7 +23,6 @@
 @media(max-width : 500px) {
     #navbar {
         flex-direction: column;
-        height: 8.2vh;
         align-items: center;
     }
     #navbar ul {
@@ -48,8 +47,11 @@
 }
 
 #showcase {
-    height: 91.8vh
+    height: 100vh;
 } 
+#showcase .showcase-content {
+    top: 95px;
+}
 
 #who {
     display: block;
