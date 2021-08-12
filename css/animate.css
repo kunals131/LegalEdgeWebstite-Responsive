@@ -1,0 +1,15 @@
+.fade-animation {
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    display: block;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

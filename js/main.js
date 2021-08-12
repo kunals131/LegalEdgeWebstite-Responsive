@@ -38,3 +38,16 @@ document.addEventListener('scroll', function() {
         document.querySelector('#navbar').style.opacity =1;
     }
 });
+
+
+
+//animation-handling 
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('#main-heading').addEventListener('animationend', function() {
+        document.querySelector('#main-para').style.animationPlayState = 'running';
+        document.querySelector('#main-para').addEventListener('animationend', function(){
+            document.querySelector('#main-button').style.animationPlayState = 'running';
+        });
+    });
+});
